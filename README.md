@@ -3,6 +3,7 @@
 
 В проекте используется:
 - HTML
+- SASS
 - CSS
 - JS
 - normalize
