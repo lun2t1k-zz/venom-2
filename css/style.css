@@ -1,6 +1,5 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #000;
   color: #fff;
 }
 
@@ -57,5 +56,47 @@ body {
   font-size: 16px;
   line-height: 140%;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.film .button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.film .button-group {
+  margin-top: 70px;
+}
+
+.film .button-icon, .film .button-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.film .button-text {
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 10px;
+}
+
+.film .button-primary {
+  color: #8D0019;
+  background-color: #fff;
+}
+
+.film .button-link {
+  color: #fff;
+}
+
+.venom {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.blood {
+  background: url("../img/blood.png") no-repeat top right, url("../img/background.jpg") no-repeat center center/100%, #14131a;
 }
 /*# sourceMappingURL=style.css.map */
