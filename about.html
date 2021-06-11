@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js" defer></script>
+  <script src="js/main.js" defer></script>
   <title>О фильме Venom 2</title>
 </head>
 <body class="primary-bg">
@@ -18,21 +22,35 @@
       </a>
     
       <nav class="nav">
+        <button class="menu-button">
+          <span class="menu-button-text">меню</span>
+      
+          <img src="img/menu.svg" alt="menu-icon" class="menu-button-icon">
+        </button>
+        <!-- /.menu-button -->
+      
+        <button class="menu-close">
+          <span class="menu-close-text">закрыть</span>
+      
+          <img src="img/arrow.svg" alt="menu-icon" class="menu-close-icon">
+        </button>
+        <!-- /.menu-close -->
+      
         <ul class="nav-menu">
           <li class="nav-menu-item">
-            <a href="about.html" class="nav-menu-link">о фильме</a>
+            <a href="index.html" class="nav-menu-link">главная</a>
           </li>
-    
+      
           <li class="nav-menu-item">
-            <a href="trailer.html" class="nav-menu-link">трейлер</a>
+            <a href="#" class="nav-menu-link">трейлер</a>
           </li>
-    
+      
           <li class="nav-menu-item">
-            <a href="actors.html" class="nav-menu-link">актеры</a>
+            <a href="#" class="nav-menu-link">актеры</a>
           </li>
-    
+      
           <li class="nav-menu-item">
-            <a href="premier.html" class="nav-menu-link">премьера</a>
+            <a href="#" class="nav-menu-link">премьера</a>
           </li>
         </ul>
         <!-- /.nav-menu -->
@@ -41,7 +59,7 @@
     <!-- /.header -->
 
     <div class="content">
-      <div class="col">
+      <div class="col col-1">
         <h2 class="content-title">О фильме</h2>
 
         <p class="content-text">В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel.</p>
@@ -63,15 +81,17 @@
         <!-- /.list -->
 
         <div class="trailer">
-          <button class="play">
-            <img src="img/play.svg" alt="play" class="play-icon">
-          </button>
+          <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0">
+            <button class="play">
+              <img src="img/play.svg" alt="play" class="play-icon">
+            </button>
+          </a>
         </div>
         <!-- /.trailer -->
       </div>
       <!-- /.col -->
 
-      <div class="col">
+      <div class="col col-2">
         <div class="poster-wrapper">
           <img src="img/poster.jpg" alt="poster" class="poster">
           

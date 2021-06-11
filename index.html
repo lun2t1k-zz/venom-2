@@ -6,8 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js" defer></script>
+  <script src="js/main.js" defer></script>
   <title>Главная Venom 2</title>
 </head>
 <body class="blood">
@@ -18,21 +22,35 @@
       </a>
     
       <nav class="nav">
+        <button class="menu-button">
+          <span class="menu-button-text">меню</span>
+
+          <img src="img/menu.svg" alt="menu-icon" class="menu-button-icon">
+        </button>
+        <!-- /.menu-button -->
+
+        <button class="menu-close">
+          <span class="menu-close-text">закрыть</span>
+
+          <img src="img/arrow.svg" alt="menu-icon" class="menu-close-icon">
+        </button>
+        <!-- /.menu-close -->
+
         <ul class="nav-menu">
           <li class="nav-menu-item">
             <a href="about.html" class="nav-menu-link">о фильме</a>
           </li>
     
           <li class="nav-menu-item">
-            <a href="trailer.html" class="nav-menu-link">трейлер</a>
+            <a href="#" class="nav-menu-link">трейлер</a>
           </li>
     
           <li class="nav-menu-item">
-            <a href="actors.html" class="nav-menu-link">актеры</a>
+            <a href="#" class="nav-menu-link">актеры</a>
           </li>
     
           <li class="nav-menu-item">
-            <a href="premier.html" class="nav-menu-link">премьера</a>
+            <a href="#" class="nav-menu-link">премьера</a>
           </li>
         </ul>
         <!-- /.nav-menu -->
@@ -51,13 +69,13 @@
       <!-- /.film-text -->
 
       <div class="button-group">
-        <button class="button button-primary">
+        <a data-fancybox href="https://www.youtube.com/watch?v=Othd8W8o3t0" class="button button-primary">
           <img width="15" src="img/play.svg" alt="" class="button-icon">
 
           <span class="button-text">смотреть трейлер</span>
-        </button>
+        </a>
 
-        <a href="trailer.html" class="button button-link">
+        <a href="#" class="button button-link">
           <img width="15" src="img/ticket.svg" alt="" class="button-icon">
 
           <span class="button-text">билеты на премьеру</span>
